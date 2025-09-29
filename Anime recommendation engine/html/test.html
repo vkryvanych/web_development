@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../images/animate.png">
+    <script src="../scripts/script.js" defer></script>
+    <title>Тест - AnimeRec</title>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">Anime<span>Rec</span></div>
+            <a href="index.html" class="back-button">← На головну</a>
+        </div>
+    </header>
+
+    <div class="test-section">     
+        <div class="container">
+            <h2 class="section-title">Знайдемо ідеальне аніме для вас!</h2>
+
+            <form id="anime-test-form">
+                <!-- Питання 1 -->
+                <div class="question active" id="question-1">
+                    <h3>Який жанр ви найбільше любите?</h3>
+                    <div class="options-grid">
+                        <label class="option-card">
+                            <input type="radio" name="genre" value="action">
+                            <div class="option-content">
+                                <span class="option-emoji">⚔️</span>
+                                <span class="option-text">Екшн</span>
+                            </div>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="genre" value="comedy">
+                            <div class="option-content">
+                                <span class="option-emoji">😂</span>
+                                <span class="option-text">Комедія</span>
+                            </div>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="genre" value="romance">
+                            <div class="option-content">
+                                <span class="option-emoji">💖</span>
+                                <span class="option-text">Романтика</span>
+                            </div>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="genre" value="fantasy">
+                            <div class="option-content">
+                                <span class="option-emoji">✨</span>
+                                <span class="option-text">Фентезі</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button type="submit" class="cta-button submit-button" id="submit-button">
+                        Отримати рекомендацію
+                    </button>
+                </div>
+            </form>
+
+            <div id="results" class="results" style="display: none;">
+                <h3>Ось що ми знайшли для вас:</h3>
+                <div id="anime-list">
+                    <!-- Тут будуть результати -->
+                </div>
+                <div class="result-actions">
+                    <button class="cta-button" onclick="window.location.href='test.html'">
+                        Пройти тест знову
+                    </button>
+                    <button class="cta-button secondary" onclick="window.location.href='index.html'">
+                        На головну
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
